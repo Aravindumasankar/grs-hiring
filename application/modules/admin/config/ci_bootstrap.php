@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['ci_bootstrap'] = array(
 
 	// Site name
-	'site_name' => 'Admin Panel',
+	'site_name' => 'GRS Hiring Panel',
 
 	// Default page title prefix
 	'page_title_prefix' => '',
@@ -74,14 +74,14 @@ $config['ci_bootstrap'] = array(
 				'User Groups'	=> 'user/group',
 			)
 		),
-		'blog' => array(
-			'name'		=> 'Blog',
-			'url'		=> 'blog',
+		'job' => array(
+			'name'		=> 'Jobs',
+			'url'		=> 'job',
 			'icon'		=> 'ion ion-edit',	// can use Ionicons instead of FontAwesome
 			'children'  => array(
-				'Blog Posts'		=> 'blog/post',
-				'Blog Categories'	=> 'blog/category',
-				'Blog Tags'			=> 'blog/tag',
+				'job Posts'		=> 'job/post',
+				'job Categories'	=> 'job/category',
+				'job Tags'			=> 'job/tag',
 			)
 		),
 		'cover_photo' => array(
@@ -119,8 +119,9 @@ $config['ci_bootstrap'] = array(
 
 	// Restricted pages
 	'page_auth' => array(
-		'user/create'				=> array('webmaster', 'admin', 'manager'),
-		'user/group'				=> array('webmaster', 'admin', 'manager'),
+		'user'				=> array('webmaster'),
+		'user/create'				=> array('webmaster', 'hiring', 'manager'),
+		'user/group'				=> array('webmaster', 'hiring', 'manager'),
 		'panel'						=> array('webmaster'),
 		'panel/admin_user'			=> array('webmaster'),
 		'panel/admin_user_create'	=> array('webmaster'),
@@ -136,7 +137,7 @@ $config['ci_bootstrap'] = array(
 	'adminlte' => array(
 		'body_class' => array(
 			'webmaster'	=> 'skin-red',
-			'admin'		=> 'skin-purple',
+			'hiring'		=> 'skin-purple',
 			'manager'	=> 'skin-black',
 			'staff'		=> 'skin-blue',
 		)
@@ -145,21 +146,21 @@ $config['ci_bootstrap'] = array(
 	// Useful links to display at bottom of sidemenu
 	'useful_links' => array(
 		array(
-			'auth'		=> array('webmaster', 'admin', 'manager', 'staff'),
+			'auth'		=> array('webmaster', 'hiring', 'manager', 'staff'),
 			'name'		=> 'Frontend Website',
-			'url'		=> '',
+			'url'		=> 'home',
 			'target'	=> '_blank',
 			'color'		=> 'text-aqua'
 		),
 		array(
-			'auth'		=> array('webmaster', 'admin'),
+			'auth'		=> array('webmaster'),
 			'name'		=> 'API Site',
 			'url'		=> 'api',
 			'target'	=> '_blank',
 			'color'		=> 'text-orange'
 		),
 		array(
-			'auth'		=> array('webmaster', 'admin', 'manager', 'staff'),
+			'auth'		=> array('webmaster'),
 			'name'		=> 'Github Repo',
 			'url'		=> CI_BOOTSTRAP_REPO,
 			'target'	=> '_blank',
