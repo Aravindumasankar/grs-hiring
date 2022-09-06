@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class User extends Admin_Controller {
+class User extends hiring_Controller {
 
 	public function __construct()
 	{
@@ -16,16 +16,16 @@ class User extends Admin_Controller {
 		$crud->columns('groups', 'username', 'email', 'first_name', 'last_name', 'active');
 		$this->unset_crud_fields('ip_address', 'last_login');
 
-		// only webmaster and admin can change member groups
-		if ($crud->getState()=='list' || $this->ion_auth->in_group(array('webmaster', 'admin')))
+		// only webmaster and hiring can change member groups
+		if ($crud->getState()=='list' || $this->ion_auth->in_group(array('webmaster', 'hiring')))
 		{
 			$crud->set_relation_n_n('groups', 'users_groups', 'groups', 'user_id', 'group_id', 'name');
 		}
 
-		// only webmaster and admin can reset user password
-		if ($this->ion_auth->in_group(array('webmaster', 'admin')))
+		// only webmaster and hiring can reset user password
+		if ($this->ion_auth->in_group(array('webmaster', 'hiring')))
 		{
-			$crud->add_action('Reset Password', '', 'admin/user/reset_password', 'fa fa-repeat');
+			$crud->add_action('Reset Password', '', 'hiring/user/reset_password', 'fa fa-repeat');
 		}
 
 		// disable direct create / delete Frontend User
@@ -54,7 +54,7 @@ class User extends Admin_Controller {
 			);
 			$groups = $this->input->post('groups');
 
-			// [IMPORTANT] override database tables to update Frontend Users instead of Admin Users
+			// [IMPORTANT] override database tables to update Frontend Users instead of hiring Users
 			$this->ion_auth_model->tables = array(
 				'users'				=> 'users',
 				'groups'			=> 'groups',
@@ -103,7 +103,7 @@ class User extends Admin_Controller {
 	public function reset_password($user_id)
 	{
 		// only top-level users can reset user passwords
-		$this->verify_auth(array('webmaster', 'admin'));
+		$this->verify_auth(array('webmaster', 'hiring'));
 
 		$form = $this->form_builder->create_form();
 		if ($form->validate())
@@ -111,7 +111,7 @@ class User extends Admin_Controller {
 			// pass validation
 			$data = array('password' => $this->input->post('new_password'));
 			
-			// [IMPORTANT] override database tables to update Frontend Users instead of Admin Users
+			// [IMPORTANT] override database tables to update Frontend Users instead of hiring Users
 			$this->ion_auth_model->tables = array(
 				'users'				=> 'users',
 				'groups'			=> 'groups',

@@ -8,7 +8,11 @@
 	</div>
 
 	<div class="col-md-4">
-		<?php echo modules::run('adminlte/widget/info_box', 'yellow', $count['users'], 'Users', 'fa fa-users', 'user'); ?>
+		<?php echo modules::run('adminlte/widget/info_box', 'yellow', $count['users'], 'Users', 'fa fa-users', 'admin_users'); ?>
+	</div>
+
+	<div class="col-md-4">
+		<?php echo modules::run('adminlte/widget/info_box', 'green', $count['users'], 'Jobs', 'fa fa-gear', 'job'); ?>
 	</div>
 	
 </div>
