@@ -74,21 +74,29 @@ $config['ci_bootstrap'] = array(
 				'User Groups'	=> 'user/group',
 			)
 		),
+		'hiring-user' => array(
+			'name'		=> 'Hiring Users',
+			'url'		=> 'hiring',
+			'icon'		=> 'fa fa-users',
+			'children'  => array(
+				'Hiring Managers'			=> 'hiring/managers',
+				'Practice Managers'			=> 'hiring/practice_managers',
+			)
+		),
 		'job' => array(
 			'name'		=> 'Jobs',
 			'url'		=> 'job',
 			'icon'		=> 'ion ion-edit',	// can use Ionicons instead of FontAwesome
 			'children'  => array(
-				'job Posts'		=> 'job/post',
-				'job Categories'	=> 'job/category',
-				'job Tags'			=> 'job/tag',
-				'job Location'			=> 'job/location',
-				'job Role'			=> 'job/role',
-				'job BU'			=> 'job/BU',
-				'job status'			=> 'job/current_status',
-				'job project'			=> 'job/project',
-				'job practice'			=> 'job/practise',
-				'job sub practice'      => 'job/sub_practice'
+				'Job Posts'		=> 'job/post',
+				'Job Locations'			=> 'job/locations',
+				'Job Roles'			=> 'job/roles',
+				'Job Business Units'			=> 'job/business_units',
+				'Job Status'			=> 'job/current_status',
+				'Job Projects'			=> 'job/projects',
+				'Job Practices'			=> 'job/practices',
+				'Job Sub Practices'      => 'job/sub_practices',
+				'Job Sources'      => 'job/sources'
 			)
 		),
 		'cover_photo' => array(
