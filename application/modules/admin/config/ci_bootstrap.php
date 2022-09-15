@@ -82,6 +82,13 @@ $config['ci_bootstrap'] = array(
 				'job Posts'		=> 'job/post',
 				'job Categories'	=> 'job/category',
 				'job Tags'			=> 'job/tag',
+				'job Location'			=> 'job/location',
+				'job Role'			=> 'job/role',
+				'job BU'			=> 'job/BU',
+				'job status'			=> 'job/current_status',
+				'job project'			=> 'job/project',
+				'job practice'			=> 'job/practise',
+				'job sub practice'      => 'job/sub_practice'
 			)
 		),
 		'cover_photo' => array(

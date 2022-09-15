@@ -25,5 +25,5 @@ application/composer.lock
 *.map
 
 ### SQL backup files ###
-sql/backup/*
+# sql/backup/*
 sql/backup/!index.html
