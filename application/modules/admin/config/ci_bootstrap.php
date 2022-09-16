@@ -89,6 +89,7 @@ $config['ci_bootstrap'] = array(
 			'icon'		=> 'ion ion-edit',	// can use Ionicons instead of FontAwesome
 			'children'  => array(
 				'Job Posts'		=> 'job/post',
+				'Job Candidates'		=> 'job/candidates',
 				'Job Locations'			=> 'job/locations',
 				'Job Roles'			=> 'job/roles',
 				'Job Business Units'			=> 'job/business_units',
