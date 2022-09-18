@@ -35,6 +35,7 @@ $config['ci_bootstrap'] = array(
 		'head'	=> array(
 			'assets/dist/admin/adminlte.min.js',
 			'assets/dist/admin/lib.min.js',
+			'assets/dist/admin/chart.min.js',
 			'assets/dist/admin/app.min.js'
 		),
 		'foot'	=> array(
