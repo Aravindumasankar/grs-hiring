@@ -24,7 +24,7 @@ class Job extends Admin_Controller {
 		$crud->set_relation('practice_manager', 'job_practice_managers', '{manager} {email}');
 		$crud->set_relation('business_unit', 'job_business_units', 'BU');
 		$crud->set_relation('project', 'job_deal_projects', 'project');
-		$crud->set_relation('practice', 'job_practices', 'practice');
+		$crud->set_relation('practice', 'job_practices', 'practice');	
 		$crud->set_relation('sub_practice', 'job_sub_practices', 'sub_practice');
 		$crud->set_relation_n_n('location', 'job_posts_locations', 'job_locations', 'post_id', 'location_id', 'location');
 		$crud->set_relation_n_n('skill', 'job_posts_skills', 'job_role_skills', 'post_id', 'role_id', 'role');
@@ -113,4 +113,5 @@ class Job extends Admin_Controller {
 		$this->mPageTitle = 'Sources';
 		$this->render_crud();
 	}
+
 }
