@@ -14092,7 +14092,7 @@ table.text-center th {
 }
 
 .skin-green .main-header .navbar {
-    background-color: #01A982
+    background-color: #222d32
 }
 
 .skin-green .main-header .navbar .nav>li>a {
@@ -15283,5 +15283,7 @@ table.text-center th {
         border-left: 1px solid #d2d6de
     }
 }
+
+
 
 /*# sourceMappingURL=adminlte.min.css.map */

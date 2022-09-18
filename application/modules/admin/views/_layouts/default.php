@@ -19,10 +19,6 @@
 
 	<?php // Right side column. Contains the navbar and content of the page ?>
 	<div class="content-wrapper">
-		<section class="content-header">
-			<h1><?php echo $page_title; ?></h1>
-			<?php $this->load->view('_partials/breadcrumb'); ?>
-		</section>
 		<section class="content">
 			<?php $this->load->view($inner_view); ?>
 			<?php $this->load->view('_partials/back_btn'); ?>

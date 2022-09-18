@@ -100,11 +100,11 @@ $config['ci_bootstrap'] = array(
 				'Job Sources'      => 'job/sources'
 			)
 		),
-		'cover_photo' => array(
-			'name'		=> 'Cover Photos',
-			'url'		=> 'cover_photo',
-			'icon'		=> 'ion ion-image',	// can use Ionicons instead of FontAwesome
-		),
+		// 'cover_photo' => array(
+		// 	'name'		=> 'Cover Photos',
+		// 	'url'		=> 'cover_photo',
+		// 	'icon'		=> 'ion ion-image',	// can use Ionicons instead of FontAwesome
+		// ),
 		'panel' => array(
 			'name'		=> 'Admin Panel',
 			'url'		=> 'panel',
