@@ -16,5 +16,7 @@
 	<div class="col-md-4">
 		<?php echo modules::run('adminlte/widget/info_box', 'green', $count['practices'], 'Practices', 'fa fa-gear', 'job_practices'); ?>
 	</div>
-	
+	<div class="col-md-8">
+	<canvas id="myChart" width="200" height="200"></canvas>
+	</div>
 </div>
