@@ -93,7 +93,6 @@ $config['ci_bootstrap'] = array(
 				'Job Locations'			=> 'job/locations',
 				'Job Roles'			=> 'job/roles',
 				'Job Business Units'			=> 'job/business_units',
-				'Job Status'			=> 'job/current_status',
 				'Job Projects'			=> 'job/projects',
 				'Job Practices'			=> 'job/practices',
 				'Job Sub Practices'      => 'job/sub_practices',

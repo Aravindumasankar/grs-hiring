@@ -22,11 +22,10 @@ class Job extends Admin_Controller {
 		// $crud->set_field_upload('image_url', UPLOAD__POST);
 		$crud->set_relation('hiring_manager', 'job_hiring_managers', '{manager} {email}');
 		$crud->set_relation('practice_manager', 'job_practice_managers', '{manager} {email}');
-		$crud->set_relation('business-unit', 'job_business_units', 'BU');
-		$crud->set_relation('status', 'job_status', 'current_status');
+		$crud->set_relation('business_unit', 'job_business_units', 'BU');
 		$crud->set_relation('project', 'job_deal_projects', 'project');
 		$crud->set_relation('practice', 'job_practices', 'practice');
-		$crud->set_relation('sub-practice', 'job_sub_practices', 'sub_practice');
+		$crud->set_relation('sub_practice', 'job_sub_practices', 'sub_practice');
 		$crud->set_relation_n_n('location', 'job_posts_locations', 'job_locations', 'post_id', 'location_id', 'location');
 		$crud->set_relation_n_n('skill', 'job_posts_skills', 'job_role_skills', 'post_id', 'role_id', 'role');
 		$crud->set_relation_n_n('source', 'job_posts_sources', 'job_sources', 'post_id', 'source_id', 'source');
