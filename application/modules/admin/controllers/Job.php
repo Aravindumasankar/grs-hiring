@@ -28,8 +28,9 @@ class Job extends Admin_Controller {
 		$crud->set_relation('sub_practice', 'job_sub_practices', 'sub_practice');
 		$crud->set_relation_n_n('location', 'job_posts_locations', 'job_locations', 'post_id', 'location_id', 'location');
 		$crud->set_relation_n_n('skill', 'job_posts_skills', 'job_role_skills', 'post_id', 'role_id', 'role');
+		// $crud->set_relation_n_n('primary_skill', 'job_posts_primary_skills', 'job_primary_skills', 'post_id', 'primary_skill_id', 'primary_skill');
 		$crud->set_relation_n_n('source', 'job_posts_sources', 'job_sources', 'post_id', 'source_id', 'source');
-		$crud->set_relation_n_n('candidates', 'job_posts_candidates', 'job_candidates', 'post_id', 'candidate_id', 'name');
+		// $crud->set_relation('candidates', 'job_candidates', 'name');
 		$state = $crud->getState();
 
 		$this->mPageTitle = 'Job Posts';
