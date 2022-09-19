@@ -1653,7 +1653,7 @@ p {
 dt,
 kbd kbd,
 label {
-    font-weight: 700
+    font-weight: 300
 }
 
 address,
@@ -3926,7 +3926,7 @@ fieldset[disabled] .btn-default:hover {
 }
 
 .btn-primary {
-    color: #fff;
+    color: #000;
     background-color: #337ab7;
     border-color: #2e6da4
 }
@@ -3943,8 +3943,6 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary:hover,
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
 }
 
 .btn-primary.active.focus,
@@ -4265,7 +4263,8 @@ fieldset[disabled] .btn-link:hover {
 
 .btn-block {
     display: block;
-    width: 100%
+    text-align: center
+    width: 1000%
 }
 
 .btn-block+.btn-block {
@@ -10601,14 +10600,15 @@ table.text-center th {
 }
 
 .btn-primary {
-    background-color: #3c8dbc;
-    border-color: #367fa9
+    background-color: rgb(23, 235, 160); 
+    border-color: rgb(23, 235, 160); 
+
 }
 
 .btn-primary.hover,
 .btn-primary:active,
 .btn-primary:hover {
-    background-color: #367fa9
+    background-color: ##01A982 
 }
 
 .btn-success {
@@ -10619,7 +10619,7 @@ table.text-center th {
 .btn-success.hover,
 .btn-success:active,
 .btn-success:hover {
-    background-color: #008d4c
+    background-color: #01A982 
 }
 
 .btn-info {
@@ -10630,29 +10630,29 @@ table.text-center th {
 .btn-info.hover,
 .btn-info:active,
 .btn-info:hover {
-    background-color: #00acd6
+    background-color: #01A982 
 }
 
 .btn-danger {
-    background-color: #dd4b39;
-    border-color: #d73925
+    background-color:#01A982 
+    border-color: #01A982 
 }
 
 .btn-danger.hover,
 .btn-danger:active,
 .btn-danger:hover {
-    background-color: #d73925
+    background-color: #01A982 
 }
 
 .btn-warning {
-    background-color: #f39c12;
-    border-color: #e08e0b
+    background-color: #01A982;
+    border-color: #01A982 
 }
 
 .btn-warning.hover,
 .btn-warning:active,
 .btn-warning:hover {
-    background-color: #e08e0b
+    background-color: ##01A982 
 }
 
 .btn-outline {
@@ -11688,16 +11688,16 @@ table.text-center th {
     .login-box,
     .register-box {
         width: 90%;
-        margin-top: 20px
+        margin-top: 50px
     }
 }
 
 .login-box-body,
 .register-box-body {
     background: #fff;
-    padding: 20px;
+    padding: 50px;
     border-top: 0;
-    color: #666
+    color: #000
 }
 
 .login-box-body .form-control-feedback,
@@ -14144,6 +14144,7 @@ table.text-center th {
 
 .skin-green .main-header .logo:hover {
     background-color:#01A982 ;
+
 }
 
 .skin-green .main-header li.user-header {

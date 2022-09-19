@@ -16,38 +16,38 @@
     text-decoration: none
 }
 
-.hp-login-btn{
-    display: inline-block;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-style: inherit;
-    font-variant: inherit;
-    font-stretch: inherit;
-    font-family: inherit;
-    text-decoration: none;
-    margin: 0px;
-    background: rgb(23, 235, 160);
-    overflow: visible;
-    text-transform: none;
-    border: none;
-    border-radius: 6px;
-    padding: 6px 16px;
-    font-size: 22px;
-    line-height: 28px;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    text-align: center;
-    transition-property: color, background-color, border-color, box-shadow;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
-    width: 100%;
-}
-
-.sign-in-text{
+.sign-in-text-bld{
     font-size: 36px;
     line-height: 42px;
     font-weight: bold;
-    color: #000;
 }
 
+.sign-in-text{
+    font-size: 18px;
+    line-height: 24px;
+}
+.custom-height{
+    height: 6px;
+}
+
+.vertical-center {
+    position: relative;
+    margin-top: 25%;
+  }
+
+  .singin{
+    font-family: Metric, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
 /*# sourceMappingURL=app.min.css.map */
+
+
+
