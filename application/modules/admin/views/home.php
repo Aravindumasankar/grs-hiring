@@ -23,18 +23,6 @@
     <div class="col-md-12 bg-gray-light">
         <canvas id="jobTrendChart" width="300" height="300"></canvas>
     </div>
-    <div class="col-md-3">
-        <?php echo modules::run('adminlte/widget/info_box', 'green', $count['hiring_managers'], 'Hiring Managers', 'fa fa-users', 'hiring_managers'); ?>
-    </div>
-    <div class="col-md-3">
-        <?php echo modules::run('adminlte/widget/info_box', 'green', $count['practice_managers'], 'Practice Managers', 'fa fa-users', 'practice_managers'); ?>
-    </div>
-    <div class="col-md-3">
-        <?php echo modules::run('adminlte/widget/info_box', 'green', $count['sub_practices'], 'Sub Practices', 'fa fa-users', 'sub_practices'); ?>
-    </div>
-    <div class="col-md-3">
-        <?php echo modules::run('adminlte/widget/info_box', 'green', $count['practices'], 'Practices', 'fa fa-gear', 'job_practices'); ?>
-    </div>
 
 </div>
 <?php 
